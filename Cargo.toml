@@ -4,5 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-rand = "0.8.5"
-rayon = "1.10.0"
+thiserror = "1.0.63"
+tokio = "1.40.0"
+
+[dev-dependencies]
+anyhow = "1.0.87"
