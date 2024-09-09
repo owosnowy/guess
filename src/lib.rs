@@ -9,6 +9,7 @@ use std:: {
 
 pub fn input() -> String {
     let mut userstring = String::new();
+    print!("> ");
     let _ = stdout().flush();
     stdin().read_line(&mut userstring).expect("Did not enter a correct string");
     if let Some('\n') = userstring.chars().next_back() {
@@ -23,3 +24,5 @@ pub fn input() -> String {
     }
     userstring
 }
+
+pub const VERSION: &str = "0.0.1";
